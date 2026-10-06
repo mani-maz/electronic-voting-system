@@ -1,4 +1,4 @@
-Markdown# Electronic Voting System / سیستم رای‌گیری الکترونیکی
+# Electronic Voting System | سیستم رای‌گیری الکترونیکی
 
 [English](#english) | [فارسی](#فارسی)
 
@@ -6,105 +6,151 @@ Markdown# Electronic Voting System / سیستم رای‌گیری الکترون
 
 ## English
 
-A simple, clean, and user-friendly **desktop Electronic Voting System** built with **Python** and **PyQt5**.
+A simple, clean, and user-friendly desktop Electronic Voting System built with Python and PyQt5.
 
 Perfect for small elections, classroom votes, clubs, or local events.
 
 ### Features
 
-- Welcome screen with modern dark theme
-- Configurable number of candidates (1–1000)
-- Choose how many top winners to highlight
-- Limit votes per voter (lock after N votes)
-- Add / remove candidate names easily
-- Voter registration by name
-- One vote per candidate per voter (no double voting)
-- Automatic lock after reaching the vote limit
-- Show / hide live vote counts
-- View list of all registered voters
-- Final ranked results with highlighted winners
-- Fully offline (no internet required)
-- Dark modern UI
+* Welcome screen with a modern dark theme
+* Configurable number of candidates (1–1000)
+* Choose how many top winners to highlight
+* Configure the vote limit per voter
+* Easily add or remove candidate names
+* Register voters by name
+* Prevent duplicate votes for the same candidate by one voter
+* Automatically lock voting after reaching the vote limit
+* Show or hide live vote counts
+* View the list of registered voters
+* Display final ranked results with highlighted winners
+* Fully offline — no internet required
+* Modern dark user interface
 
 ### Screenshots
 
-| Welcome Screen | Election Setup |
-|:---:|:---:|
-| ![Welcome](screenshots/01_electronic_voting_system.png) | ![Setup](screenshots/02_Ssetup.png) |
+|                         Welcome Screen                         |                Election Setup                |
+| :------------------------------------------------------------: | :------------------------------------------: |
+| ![Welcome Screen](screenshots/01_electronic_voting_system.png) | ![Election Setup](screenshots/02_Ssetup.png) |
 
-| Candidates | Delete Candidate |
-|:---:|:---:|
-| ![Candidates](screenshots/03_cndidates.png) | ![Delete](screenshots/04_delete_last_candidate.png) |
+|                  Candidates                 |                        Delete Candidate                       |
+| :-----------------------------------------: | :-----------------------------------------------------------: |
+| ![Candidates](screenshots/03_cndidates.png) | ![Delete Candidate](screenshots/04_delete_last_candidate.png) |
 
-| Voting Menu | Show Voters |
-|:---:|:---:|
-| ![Voting](screenshots/05_voting_menu.png) | ![Voters](screenshots/06_show_voters.png) |
+|                   Voting Menu                  |                   Show Voters                  |
+| :--------------------------------------------: | :--------------------------------------------: |
+| ![Voting Menu](screenshots/05_voting_menu.png) | ![Show Voters](screenshots/06_show_voters.png) |
 
-| Show Votes | Final Results |
-|:---:|:---:|
-| ![Votes](screenshots/07_show_candidates_votes.png) | ![Winner](screenshots/08_show_winner.png) |
+|                        Show Votes                       |                   Final Results                  |
+| :-----------------------------------------------------: | :----------------------------------------------: |
+| ![Show Votes](screenshots/07_show_candidates_votes.png) | ![Final Results](screenshots/08_show_winner.png) |
 
 ### Requirements
 
-- Python 3.8 or higher
-- PyQt5
+* Python 3.8 or higher
+* PyQt5
 
 ### Installation
 
+Clone the repository:
+
 ```bash
-# Clone the repository
 git clone https://github.com/mani-maz/electronic-voting-system.git
 cd electronic-voting-system
+```
 
-# (Optional) Create a virtual environment
+Optionally, create a virtual environment:
+
+```bash
 python -m venv venv
-source venv/bin/activate        # Linux / macOS
-# venv\Scripts\activate         # Windows
+```
 
-# Install dependencies
+Activate it on Windows:
+
+```powershell
+venv\Scripts\activate
+```
+
+Activate it on Linux or macOS:
+
+```bash
+source venv/bin/activate
+```
+
+Install the dependencies:
+
+```bash
 pip install -r requirements.txt
-How to Run
-Bashpython voting_system.py
-Download Ready-to-Use Version (Windows)
-You can download the pre-built .exe file from the Releases section.
-How to Use
+```
 
-Welcome Screen → Click Continue
-Nomination Screen
-Set number of candidates
-Set number of winners to highlight
-Set maximum votes allowed per voter
-Enter candidate names (press Enter after each name)
-You can delete the last candidate or view the list
-Click Start Voting
+### How to Run
 
-Voting Screen
-Enter voter name and press Enter
-Click on candidates to vote (each candidate can be selected only once)
-After reaching the vote limit, voting locks automatically
-Use Show Votes / Hide Votes to toggle live counts
-Use Show Voters to see the list of voters
-Click END when voting is finished to see the final ranked results
+```bash
+python voting_system.py
+```
 
+### Download the Windows Version
 
-Project Structure
-textelectronic-voting-system/
-├── voting_system.py      # Main application
-├── requirements.txt      # Dependencies
-├── LICENSE               # MIT License
+You can download the pre-built Windows executable from the Releases section.
+
+[Download the latest release](https://github.com/mani-maz/electronic-voting-system/releases)
+
+### How to Use
+
+#### Welcome Screen
+
+Launch the application and click Continue.
+
+#### Election Setup
+
+* Set the number of candidates.
+* Choose how many winners to highlight.
+* Configure the maximum number of votes per voter.
+* Enter candidate names, pressing Enter after each name.
+* Delete the last candidate or view the candidate list if needed.
+* Click Start Voting to begin.
+
+#### Voting Screen
+
+* Enter the voter's name and press Enter.
+* Click on candidates to cast votes.
+* Each voter can vote for each candidate only once.
+* Voting locks automatically when the configured vote limit is reached.
+* Use Show Votes / Hide Votes to toggle vote counts.
+* Use Show Voters to view the registered voters.
+* Click END to display the final ranked results.
+
+### Project Structure
+
+```text
+electronic-voting-system/
+├── voting_system.py
+├── requirements.txt
+├── LICENSE
 ├── .gitignore
-├── screenshots/          # Application screenshots
-└── README.md             # This file
-License
-This project is licensed under the MIT License — see the LICENSE [blocked] file for details.
-Author
+├── screenshots/
+└── README.md
+```
+
+* `voting_system.py` — Main application
+* `requirements.txt` — Project dependencies
+* `LICENSE` — MIT License
+* `.gitignore` — Files excluded from Git
+* `screenshots/` — Application screenshots
+* `README.md` — Project documentation
+
+### License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+### Author
+
 mani_maz
 
 Created with ❤️
 
-## فارسی
+---
 
-<div dir="rtl" align="right">
+## فارسی
 
 یک سیستم رای‌گیری الکترونیکی دسکتاپ، ساده و کاربرپسند که با Python و PyQt5 توسعه داده شده است.
 
@@ -198,7 +244,7 @@ python voting_system.py
 
 #### صفحه خوش‌آمدگویی
 
-برنامه را اجرا کنید و روی دکمه Continue کلیک کنید.
+برنامه را اجرا کنید و روی Continue کلیک کنید.
 
 #### صفحه تنظیمات انتخابات
 
@@ -216,7 +262,7 @@ python voting_system.py
 * هر رأی‌دهنده می‌تواند به هر نامزد حداکثر یک بار رأی بدهد.
 * پس از رسیدن به محدودیت تعیین‌شده، سیستم به‌طور خودکار قفل می‌شود.
 * از دکمه Show Votes / Hide Votes برای نمایش یا مخفی‌کردن تعداد رأی‌های نامزدها استفاده کنید.
-* با دکمه Show Voters می‌توانید فهرست رأی‌دهندگان را مشاهده کنید.
+* با Show Voters می‌توانید فهرست رأی‌دهندگان را مشاهده کنید.
 * پس از پایان رأی‌گیری، روی END کلیک کنید تا نتایج نهایی نمایش داده شوند.
 
 ### ساختار پروژه
@@ -244,9 +290,6 @@ electronic-voting-system/
 
 ### نویسنده
 
-مانی (mani_maz)
+mani_maz
 
 ساخته‌شده با ❤️
-
-</div>
-
